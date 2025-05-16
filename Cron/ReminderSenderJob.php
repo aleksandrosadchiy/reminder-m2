@@ -29,16 +29,29 @@ class ReminderSenderJob
     ) {
     }
 
+    /**
+     * @return void
+     */
     public function executeToday(): void
     {
         $this->processReminders((new \DateTime())->format('Y-m-d'), 'Today');
     }
 
+    /**
+     * @return void
+     */
     public function executeUpcoming(): void
     {
         $this->processReminders((new \DateTime())->modify('+7 days')->format('Y-m-d'), 'Upcoming');
     }
 
+    /**
+     * @param string $date
+     * @param string $logPrefix
+     * @return void
+     * @throws \Magento\Framework\Exception\LocalizedException
+     * @throws \Magento\Framework\Exception\MailException
+     */
     private function processReminders(string $date, string $logPrefix): void
     {
         if (!$this->config->isEnabled()) {
