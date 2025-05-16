@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="product_reminder" translate="label" sortOrder="999">
+            <label>Product Reminder</label>
+        </tab>
+        <section id="product_reminder" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+            <label>Product Reminder</label>
+            <tab>product_reminder</tab>
+            <resource>Vendor_ProductReminder::configuration</resource>
+            <group id="general" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>Product reminder settings</label>
+                <field id="enable" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Enable</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="email_sender" type="text" sortOrder="20" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Email sender address</label>
+                    <comment/>
+                </field>
+                <field id="default_reminder_message" type="text" sortOrder="30" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Default Reminder Message</label>
+                    <comment/>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

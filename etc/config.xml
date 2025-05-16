@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <product_reminder>
+            <general>
+                <enable>1</enable>
+                <email_sender></email_sender>
+                <default_reminder_message>Product Reminder Default Message</default_reminder_message>
+            </general>
+        </product_reminder>
+    </default>
+</config>

@@ -1,0 +1,17 @@
+{
+    "name": "vendor/module-productreminder",
+    "description": "Product Reminder",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Vendor\\ProductReminder\\": ""
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Vendor\ProductReminder\Api\ProductReminderManagementInterface"
+                type="Vendor\ProductReminder\Model\ProductReminderManagement"/>
+    <preference for="Vendor\ProductReminder\Api\ProductReminderRepositoryInterface"
+                type="Vendor\ProductReminder\Model\ProductReminderRepository"/>
+    <preference for="Vendor\ProductReminder\Api\Data\ProductReminderInterface"
+                type="Vendor\ProductReminder\Model\ProductReminder"/>
+    <preference for="Vendor\ProductReminder\Api\Data\ProductReminderSearchResultsInterface"
+                type="Magento\Framework\Api\SearchResults"/>
+    <preference for="Vendor\ProductReminder\Api\ProductReminderConfigInterface"
+                type="Vendor\ProductReminder\Model\ProductReminderConfig"/>
+</config>
